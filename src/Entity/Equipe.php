@@ -80,6 +80,7 @@ class Equipe
 
     /**
      * @ORM\OneToMany(targetEntity=Joueur::class, mappedBy="equipe")
+     * @Groups({"equipe:get"})
      */
     private $joueurs;
 
